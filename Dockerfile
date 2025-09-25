@@ -9,7 +9,8 @@ RUN apt-get update && apt-get install -y ffmpeg git \
 # Whisper + FastAPI
 RUN pip install --no-cache-dir faster-whisper fastapi uvicorn
 
-COPY app /app
+# copiar código
+COPY app /app/app
 
 EXPOSE 9992
 
