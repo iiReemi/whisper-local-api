@@ -7,7 +7,7 @@ RUN apt-get update && apt-get install -y ffmpeg git \
     && rm -rf /var/lib/apt/lists/*
 
 # Whisper + FastAPI
-RUN pip install --no-cache-dir faster-whisper fastapi uvicorn
+RUN pip install --no-cache-dir faster-whisper fastapi uvicorn python-multipart
 
 # copiar código
 COPY app /app/app
